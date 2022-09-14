@@ -1,0 +1,34 @@
+<div class="card mt-3 player-card rounded-0 cursor-pointer" *ngIf="player!==null">
+    <a [href]="player.picture">
+      <img [src]="player.picture" alt="..."/>
+    </a>
+    <div class="card-body p-0 mt-4 ms-n4">
+      <h5 class="card-title text-orange">{{player.firstname}} {{player.lastname}}</h5>
+      <div class="row">
+        <div class="col-4">
+          <div class="text-gray-light">
+            RANK
+          </div>
+          <div class="text-orange fw-bold">
+            #{{player.data.rank}}
+          </div>
+        </div>
+        <div class="col-4">
+          <div  class="text-gray-light">
+            POINTS
+          </div>
+          <div class="text-orange fw-bold">
+            {{player.data.points}}
+          </div>
+        </div>
+        <div class="col-4">
+          <div  class="text-gray-light">
+            COUNTRY
+          </div>
+          <div class="text-orange fw-bold">
+            {{player.country.code}}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

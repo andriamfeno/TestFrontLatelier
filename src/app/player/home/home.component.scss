@@ -1,0 +1,17 @@
+@import "../../../styles/color.scss";
+body{
+    background-image: linear-gradient(25deg,white -30%, $orange-light 30%);
+}
+.txt-search{
+    background-color: $brown;
+    border-radius: 1rem;
+    &::placeholder {
+        color:$orange-light;
+        opacity: 1; 
+        font-weight: bold;
+        }
+}
+.img{
+    width:70%;
+    float:right;
+}

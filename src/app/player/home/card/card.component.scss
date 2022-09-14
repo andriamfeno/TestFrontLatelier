@@ -1,0 +1,11 @@
+.card {
+    flex-direction: row;
+}
+
+.player-card{
+  height: 140px;
+  overflow: hidden;
+  & img{
+    width: 180px;
+  }
+}
